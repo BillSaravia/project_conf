@@ -1,10 +1,10 @@
 import axios from "axios";
 
 export const getProductsRequest = async () =>
-  await axios.get("http://localhost:3000/products");
+  await axios.get("http://localhost:3000/products/");
 
 export const createProductRequest = async (product) =>
-  await axios.post("http://localhost:3000/products", product);
+  await axios.post("http://localhost:3000/products/", product);
 
 export const deleteProductRequest = async (id) =>
   await axios.delete(`http://localhost:3000/products/${id}`);

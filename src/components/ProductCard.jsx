@@ -12,10 +12,12 @@ function ProductCard({ product }) {
   return (
     <div className="bg-zinc-700 text-white rounded-md p-4">
       <header className="flex justify-between">
-        <h2 className="text-sm font-bold">{product.title}</h2>
+        <h2 className="text-sm font-bold">{product.name}</h2>
         <span>{product.done == 1 ? "️✅️" : "❌"}</span>
       </header>
       <p className="text-xs">{product.description}</p>
+      <p className="text-xs">{product.quantity}</p>
+      <p className="text-xs">{product.price}</p>
       <span>{product.createAt}</span>
       <div className="flex gap-x-1">
         <button
